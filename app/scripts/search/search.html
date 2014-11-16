@@ -1,0 +1,16 @@
+<ion-view title="Home">
+  
+  <ion-header-bar class="bar bar-subheader item-input-inset" >
+    <cstm-search-input textinput="{{search.text}}"></cstm-search-input>
+    <button class="button button-clear icon ion-search" ng-click="search()"></button>
+  </ion-header-bar>
+    
+  <div style="margin-top:44px">
+    <ion-checkbox ng-model="isChecked">Checkbox Label</ion-checkbox>
+  </div>
+    
+  <ion-content class="has-subheader " style="margin-top: 53px" scroll="true">
+    <cstm-search-list onselect="locationSelected()" filterfor="{{search.text}}"></cstm-search-list>
+  </ion-content>
+  
+</ion-view>

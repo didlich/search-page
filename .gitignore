@@ -1,0 +1,8 @@
+.project
+
+# nodejs
+node_modules
+
+# cordova
+www
+
